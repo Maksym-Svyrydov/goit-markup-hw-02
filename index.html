@@ -5,22 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Верхня лінія-->
     <header class="header-page">
-      <a class="logo" href="./index.html"><span>WEB</span>Studio</a>
+      <a class="logo-black" href="./index.html"><span class="logo">Web</span>Studio</a>
       <nav>
         <ul class="header-nav">
-          <li><a class="header-nav-link" href="./index.html">Студія</a></li>
-          <li><a class="header-nav-link" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="header-nav-link" href="./index.html">Контакти</a></li>
+          <li><a class="nav-link-curren" href="./index.html">Студія</a></li>
+          <li><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="nav-link" href="./index.html">Контакти</a></li>
         </ul>
       </nav>
-      <div class="header-contacts">
-        <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-      </div>
+      <ul class="header-contacts">
+        <li>
+          <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
     <main>
       <!--Шапка-->
@@ -45,7 +56,7 @@
             </p>
           </li>
           <li>
-            <h3 class="subtitle">Планупвання</h3>
+            <h3 class="subtitle">Планування</h3>
             <p class="text-subtitle"
               >Так само консультація з широким активом значною мірою зумовлює.</p
             >
@@ -108,10 +119,10 @@
     <!--Підвал-->
     <footer class="footer">
       <div>
-        <a class="logo" href="./index.html"><span>WEB</span>Studio</a>
+        <a class="logo-white" href="./index.html"><span class="logo">Web</span>Studio</a>
       </div>
       <address>
-        <ul>
+        <ul class="footer-list-contacts">
           <li>
             <a
               class="adress"

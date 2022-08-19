@@ -5,88 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Верхня лінія-->
     <header class="header-page">
-      <a class="logo" href="./index.html"><span>WEB</span>Studio</a>
+      <a class="logo-black" href="./index.html"><span class="logo">Web</span>Studio</a>
       <nav>
         <ul class="header-nav">
-          <li><a class="header-nav-link" href="./index.html">Студія</a></li>
-          <li><a class="header-nav-link" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="header-nav-link" href="./index.html">Контакти</a></li>
+          <li><a class="nav-link-curren" href="./index.html">Студія</a></li>
+          <li><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
+          <li><a class="nav-link" href="./index.html">Контакти</a></li>
         </ul>
       </nav>
-      <div class="header-contacts">
-        <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-      </div>
+      <ul class="header-contacts">
+        <li>
+          <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="contacts-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
     <!--Герой-->
     <section>
-      <h1>Наші роботи</h1>
-      <ul>
+      <h1 class="section-portfolio">Наші роботи</h1>
+      <ul class="list-btn">
         <li><button class="btn" type="button">Усі</button> </li>
         <li> <button class="btn" type="button">Веб-сайти</button></li>
         <li> <button class="btn" type="button">Додатки</button></li>
         <li><button class="btn" type="button">Дизайн</button> </li>
         <li><button class="btn" type="button">Маркетинг</button> </li>
       </ul>
-      <ul>
+      <ul class="list-portfolio">
         <li>
           <img src="./images/portfolio/img.jpg" alt="" width="370" height="294" />
-          <h2>Технокряк</h2>
-          <p>Веб-сайт</p>
+          <h2 class="subtitle-item">Технокряк</h2>
+          <p class="portfolio-item">Веб-сайт</p>
         </li>
         <li>
           <img src="./images/portfolio/img-1.jpg" alt="" width="370" height="294" />
-          <h2>Постер New Orlean vs Golden Star</h2>
-          <p>Дизайн</p>
+          <h2 class="subtitle-item">Постер New Orlean vs Golden Star</h2>
+          <p class="portfolio-item">Дизайн</p>
         </li>
         <li>
           <img src="./images/portfolio/img-2.jpg" alt="" width="370" height="294" />
-          <h2>Ресторан <span lang="en">Seafood</span></h2>
-          <p>Додаток</p>
+          <h2 class="subtitle-item">Ресторан <span lang="en">Seafood</span></h2>
+          <p class="portfolio-item">Додаток</p>
         </li>
         <li>
           <img src="./images/portfolio/img-3.jpg" alt="" width="370" height="294" />
-          <h2>Проєкт <span lang="en">Prime</span></h2>
-          <p>Маркетинг</p>
+          <h2 class="subtitle-item">Проєкт <span lang="en">Prime</span></h2>
+          <p class="portfolio-item">Маркетинг</p>
         </li>
         <li>
           <img src="./images/portfolio/img-4.jpg" alt="" width="370" height="294" />
-          <h2>Проєкт <span lang="en">Boxes</span></h2>
-          <p>Додаток</p>
+          <h2 class="subtitle-item" class="subtitle-item">Проєкт <span lang="en">Boxes</span></h2>
+          <p class="portfolio-item">Додаток</p>
         </li>
         <li>
           <img src="./images/portfolio/img-5.jpg" alt="" width="370" height="294" />
-          <h2 lang="en">Inspiration has no Borders</h2>
-          <p>Веб-сайт</p>
+          <h2 class="subtitle-item" lang="en">Inspiration has no Borders</h2>
+          <p class="portfolio-item">Веб-сайт</p>
         </li>
         <li>
           <img src="./images/portfolio/img-6.jpg" alt="" width="370" height="294" />
-          <h2>Видання <span lang="en">Limited Edition</span></h2>
-          <p>Дизайн</p>
+          <h2 class="subtitle-item">Видання <span lang="en">Limited Edition</span></h2>
+          <p class="portfolio-item">Дизайн</p>
         </li>
         <li>
           <img src="./images/portfolio/img-7.jpg" alt="" width="370" height="294" />
-          <h2>Проєкт <span lang="en">LAB</span></h2>
-          <p>Маркетинг</p>
+          <h2 class="subtitle-item">Проєкт <span lang="en">LAB</span></h2>
+          <p class="portfolio-item">Маркетинг</p>
         </li>
         <li>
           <img src="./images/portfolio/img-8.jpg" alt="" width="370" height="294" />
-          <h2 lang="en">Growing Business</h2>
-          <p>Додаток</p>
+          <h2 class="subtitle-item" lang="en">Growing Business</h2>
+          <p class="portfolio-item">Додаток</p>
         </li>
       </ul>
     </section>
     <!--Підвал-->
     <footer class="footer">
       <div>
-        <a class="logo" href="./index.html"><span>WEB</span>Studio</a>
+        <a class="logo-white" href="./index.html"><span class="logo">Web</span>Studio</a>
       </div>
       <address>
-        <ul>
+        <ul class="footer-list-contacts">
           <li>
             <a
               class="adress"
