@@ -7,13 +7,14 @@
   --main-txt-cl: #212121;
   --subtitle-txt-cl: #757575;
   --background-txt-xl: #ffffff;
-  --nav-txt-cl: #2196f3;
   --footer-txt-cl: #ffffff99;
-
+  --logo-black-cl: #000000;
+  --background-hero-cl: #ececec;
   /* Background colors */
   --main-backgrond-cl: #2f303a;
   --main-btn-cl: #2196f3;
-
+  --background-portfolio-cl: #eeeeee;
+  --logo-black-cl: #000000;
   /* Others */
   --background-btn-cl: #f5f4fa;
 }
@@ -21,9 +22,9 @@ body {
   background-color: var(--background-txt-xl);
   font-family: var(--main-font);
   color: var(--main-txt-cl);
+  letter-spacing: 0.03em;
 }
-.header-page {
-}
+/*.header-page {}*/
 .logo {
   color: var(--main-btn-cl);
   font-family: var(--secondary-font);
@@ -53,17 +54,12 @@ body {
 .header-nav {
   list-style-type: none;
   font-weight: 500;
-  font-size: 14px;
 }
-.nav-link-curren:hover,
-:focus {
+
+.nav-link-current {
   color: var(--main-btn-cl);
-}
-.nav-link-curren {
-  color: var(--main-txt-cl);
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -72,19 +68,17 @@ body {
   color: var(--main-txt-cl);
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.nav-link:hover,
-:focus {
-  color: var(--main-btn-cl);
+.nav-link:focus,
+.nav-link:hover {
+  color: #2196f3;
 }
 .header-contacts {
   list-style: none;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
   letter-spacing: 0.02em;
 }
 .contacts-mail {
@@ -112,8 +106,9 @@ body {
   color: var(--background-txt-xl);
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 60px;
+  font-size: 44px;
   letter-spacing: 0.06em;
+  line-height: 1.36;
 }
 .hero-btn {
   text-align: center;
@@ -121,32 +116,43 @@ body {
   color: var(--background-txt-xl);
   font-weight: 700;
   font-size: 16px;
+  font-family: inherit;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+.hero-btn:focus,
+.hero-btn:hover {
+  color: var(--subtitle-txt-cl);
 }
 .section-features {
   font-family: var(--main-font);
 }
 .features-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .list-desk {
   list-style-type: none;
 }
 .subtitle {
   font-weight: 700;
-  font-size: 14px;
   line-height: calc(16.41 / 14);
   text-transform: uppercase;
   color: var(--main-txt-cl);
-  letter-spacing: 0.03em;
 }
 .text-subtitle {
-  font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--subtitle-txt-cl);
-  letter-spacing: 0.03em;
 }
 .section-img {
   font-weight: 700;
@@ -154,7 +160,6 @@ body {
   line-height: calc(42.19 / 36);
   text-align: center;
   color: var(--main-txt-cl);
-  letter-spacing: 0.03em;
 }
 .list-img {
   list-style-type: none;
@@ -162,12 +167,16 @@ body {
 .section-team {
   font-weight: 700;
   font-size: 36px;
-  line-height: calc (42.19 / 36);
+  line-height: calc(42.19 / 36);
   text-align: center;
-  color: var(--main-txt-cl);
-  letter-spacing: 0.03em;
+  background-color: var(--background-btn-cl);
 }
 .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42.19 / 36);
+  text-align: center;
+  color: var(--main-txt-cl);
 }
 .team-card {
   list-style-type: none;
@@ -176,17 +185,16 @@ body {
 .team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: calc (18.75 / 16);
+  line-height: calc(18.75 / 16);
   text-align: center;
   color: var(--main-txt-cl);
-  letter-spacing: 0.03em;
 }
 .team-text {
+  font-weight: 400;
   font-size: 16px;
-  line-height: calc (18.75 / 16);
+  line-height: calc(18.75 / 16);
   text-align: center;
   color: var(--subtitle-txt-cl);
-  letter-spacing: 0.03em;
 }
 .footer {
   background-color: var(--main-backgrond-cl);
@@ -200,21 +208,17 @@ body {
 }
 .adress {
   text-decoration: none;
-  font-size: 14px;
   line-height: 24px;
   color: var(--background-txt-xl);
-  letter-spacing: 0.03em;
 }
-.link-addres {
+/*.link-addres {
 }
 .footer-list-contacts {
-}
+}*/
 .footer-mail {
   text-decoration: none;
-  font-size: 14px;
   line-height: 24px;
   color: var(--footer-txt-cl);
-  letter-spacing: 0.03em;
 }
 .footer-mail:hover,
 :focus {
@@ -222,35 +226,32 @@ body {
 }
 .footer-tel {
   text-decoration: none;
-  font-size: 14px;
   line-height: 24px;
   color: var(--footer-txt-cl);
-  letter-spacing: 0.03em;
 }
 .footer-tel:hover,
 :focus {
   color: var(--main-btn-cl);
 }
 /* Portfolio*/
-.section-portfolio {
-}
+/*.section-portfolio {}*/
 .list-btn {
   list-style-type: none;
 }
 .btn {
   background-color: var(--background-btn-cl);
   color: var(--main-txt-cl);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
+  line-height: calc(26 / 16);
   text-align: center;
   cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
   background-color: var(--main-btn-cl);
-  color: var(--background-btn-cl);
+  color: var(--background-portfolio-cl);
 }
 
 .list-portfolio {
@@ -262,13 +263,13 @@ body {
   color: var(--main-txt-cl);
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
 }
 .portfolio-item {
   text-decoration: none;
   color: var(--subtitle-txt-cl);
   font-size: 16px;
-  line-height: 30px;
+  line-height: calc(30 / 18);
   letter-spacing: 0.06em;
 }
