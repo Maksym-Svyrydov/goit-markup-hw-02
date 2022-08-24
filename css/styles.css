@@ -23,6 +23,7 @@ body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 /*.header-page {}*/
 .logo {
@@ -128,13 +129,14 @@ body {
 .section-features {
   font-family: var(--main-font);
 }
-.features-title {
+.visualy-hiden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+  font-size: 14px;
 
   white-space: nowrap;
   clip-path: inset(100%);
@@ -247,11 +249,12 @@ body {
   line-height: calc(26 / 16);
   text-align: center;
   cursor: pointer;
+  letter-spacing: 0.03em;
 }
 .btn:hover,
 .btn:focus {
   background-color: var(--main-btn-cl);
-  color: var(--background-portfolio-cl);
+  color: var(--background-btn-cl);
 }
 
 .list-portfolio {
